@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}Agro-Cilmat Services | WIMP3{% endblock %}
+
+{% block content %}
+<div id="main_agro_services" class="container-full p-5">
+    <div class="row mb-3">
+        <div class="col-12">
+            <h1>Agro-Climat Services</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-2">
+            <div class="card">
+                <div class="card-header bg-primary text-white">Count:</div>
+                <div class="card-body">
+                    <h5 class="card-title">Pest Risk Listing</h5>
+                    <p class="card-text"></p>
+                    <a href="pest-risk-list/" class="btn btn-warning">View Listing</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="card">
+                <div class="card-header bg-info text-white">Count:</div>
+                <div class="card-body">
+                    <h5 class="card-title">Pest Risk Entry</h5>
+                    <p class="card-text"></p>
+                    <a href="pest-risk-entry/start/" class="btn btn-warning">New Entry</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

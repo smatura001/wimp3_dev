@@ -1,0 +1,55 @@
+body{ 
+   font-family: "Source Sans 3", sans-serif;
+   font-weight: 400;
+   font-optical-sizing: auto;
+   font-style: normal;
+}
+h1,h2,h3,h4,h5,h6{
+   font-family: "Encode Sans", sans-serif;
+   font-optical-sizing: auto;
+   font-style: normal;
+   font-variation-settings: "wdth" 100;
+}
+h1{ font-weight: 600; }
+.text-white{ color: #fff !important; }
+#header{
+  color:#fff;
+}
+#main-menu{
+    background:#229ebd;
+    color:#fff;
+}
+#main-menu a{ color:#fff; font-weight: 500; }
+#logo{ font-size: 30px; font-weight: 600; color: #fff; }
+
+#main_pr_start, #main_pr_details, #main_pr_list, #main_agro_services{
+  background: #fff;;
+}
+#frm_PestRiskStart .form-group{
+  clear: both;
+  overflow: auto !important;
+}
+#frm_PestRiskStart #id_list_months{ 
+  width: 100%; 
+  clear: both; 
+  padding-left: 40px; 
+}
+#frm_PestRiskStart #id_list_months div, #id_months div{
+   float: left;
+   width:70px;
+ }
+ #id_months{ width: 100%; padding-left: 200px; overflow: auto; }
+
+ #frm_PestRisk label{
+   float: left;
+   width: 20%;
+ }
+#id_year{ clear: left; }
+#frm_PestRisk select, #frm_PestRisk input[type=text], #frm_PestRisk textarea{
+   float: left;
+   width: 60%;
+ }
+ #frm_PestRisk p{
+   overflow: auto;
+   margin-bottom: 20px;;
+ }
