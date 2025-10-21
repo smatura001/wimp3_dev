@@ -2,12 +2,16 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 from django.template import loader
+
 #from django import forms
 #from .forms import FormPestRisk
 
 # Create your views here.
+
 def index(request):
-    return HttpResponse("Welcome Localhost")
+    template = loader.get_template('home.html')
+    #context = {'name': 'World'}  # Data to pass to the template
+    return HttpResponse(template.render())
 
 #def home(request):
  #   return HttpResponse("Welcome Dashboard")

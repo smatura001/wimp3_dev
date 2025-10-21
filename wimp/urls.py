@@ -24,11 +24,13 @@ from . import views
 router = routers.DefaultRouter()
 router.register('users', agro_views.UserViewSet)
 router.register('groups', agro_views.GroupViewSet)
+
 router.register('districts', agro_views.DistrictViewSet)
 router.register('commodity-types', agro_views.CommodityTypeViewSet)
 router.register('commodity-categories', agro_views.CommodityCategoryViewSet)
 router.register('pest-alert-levels', agro_views.PestAlertLevelViewSet)
-router.register('pest-risk-entries', agro_views.PestRiskEntryViewSet)
+#router.register('pest-risk-entries', agro_views.PestRiskEntryViewSet)
+router.register('pest-risk', agro_views.PestRiskMainListingViewSet)
 
 urlpatterns = [
     path('', views.index, name='index'),
