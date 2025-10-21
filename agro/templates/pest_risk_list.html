@@ -6,82 +6,11 @@
 <div id="main_pr_list" class="container-full p-5">
 <div class="row mb-3">
     <div class="col-12">
-        <h1>Pest Risk</h1>
+        <h1>Pest Risk Listing</h1>
     </div>
 </div>
-<!--<div class="row">
-    <div class="col-4 row mb-3">
-        <label for="pest_alert_level" class="col-3">Date START: </label>
-        <select class="custom-select col-4" id="pest_alert_level">
-            <option selected>Select Start Month...</option>
-            <option value="1">Jan</option>
-            <option value="2">Feb</option>
-            <option value="3">Mar</option>
-        </select>
-        <select class="custom-select col-4" id="pest_alert_level">
-            <option selected>Select Start Year...</option>
-            <option value="2025">2025</option>
-            <option value="2024">2024</option>
-        </select>
-    </div>
-    <div class="col-4 row mb-3">
-        <label for="pest_alert_level" class="col-3">Date END: </label>
-        <select class="custom-select col-4" id="pest_alert_level">
-            <option selected>Select End Month...</option>
-            <option value="1">Jan</option>
-            <option value="2">Feb</option>
-            <option value="3">Mar</option>
-        </select>
-        <select class="custom-select col-4" id="pest_alert_level">
-            <option selected>Select End Year...</option>
-            <option value="2025">2025</option>
-            <option value="2024">2024</option>
-        </select>
-    </div>
-</div>-->
 <div class="row">
     <div class="col-12">
-        <!--<table class="table table-condensed table-striped table-hover w-100">
-          <thead>
-            <tr>
-              <th scope="col">ID</th>
-              <th scope="col">District/Zone</th>
-              <th scope="col">Pest Alert</th>
-              <th scope="col">Drought Alert</th>
-              <th scope="col">TEMP MAX</th>
-              <th scope="col">TEMP MIN</th>
-              <th scope="col">PRECIP MIN</th>
-              <th scope="col">PRECIP MIN</th>
-              <th scope="col">Effect</th>
-              <th scope="col">Info</th>
-              <th scope="col">Action</th>
-
-            </tr>
-          </thead>
-          <tbody>
-        {% for item in pest_risk_data %}
-        <tr>
-            <td width="5%">{{ item.id }}</td>
-            <td>{{ item.district_id }}</td>
-            <td>{{ item.pest_alert_lvl_id }}</td>
-            <td>{{ item.drought_alert_lvl_id }}</td>
-            <td>{{ item.temp_min }}</td>
-            <td>{{ item.temp_max }}</td>
-            <td>{{ item.precip_min }}</td>
-            <td>{{ item.precip_max }}</td>
-            <td>{{ item.effect }}</td>
-            <td>{{ item.info }}</td>
-            <td>{{ item.actions }}</td>
-        </tr>
-        {% empty %}
-        <tr>
-            <td colspan="4">No data available</td>
-        </tr>
-        {% endfor %}
-    </tbody>
-  
-        </table>-->
-
         {% load render_table from django_tables2 %}
         {% render_table table %}
     </div>

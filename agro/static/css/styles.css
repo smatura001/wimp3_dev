@@ -3,6 +3,7 @@ body{
    font-weight: 400;
    font-optical-sizing: auto;
    font-style: normal;
+   line-height: 1.2;
 }
 h1,h2,h3,h4,h5,h6{
    font-family: "Encode Sans", sans-serif;
@@ -14,31 +15,46 @@ h1{ font-weight: 600; }
 .text-white{ color: #fff !important; }
 #header{
   color:#fff;
+  background:#229ebd;
 }
 #main-menu{
-    background:#229ebd;
+
     color:#fff;
 }
 #main-menu a{ color:#fff; font-weight: 500; }
+#menu_sidebar{
+  background: #229ebd;
+  color: #fff;
+}
+#menu_items li, #menu_items .list-group-item a{
+  color: #fff;;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 18px;
+  text-decoration: none;
+}
+#menu_items .list-group-item{
+  background: transparent !important;
+}
 #logo{ font-size: 30px; font-weight: 600; color: #fff; }
 
 #main_pr_start, #main_pr_details, #main_pr_list, #main_agro_services{
   background: #fff;;
 }
-#frm_PestRiskStart .form-group{
+#frm_PestRiskNew .form-group{
   clear: both;
   overflow: auto !important;
 }
-#frm_PestRiskStart #id_list_months{ 
+#frm_PestRiskNew #id_list_months{ 
   width: 100%; 
   clear: both; 
   padding-left: 40px; 
 }
-#frm_PestRiskStart #id_list_months div, #id_months div{
+#frm_PestRiskNew #id_list_months div, #id_months div{
    float: left;
-   width:70px;
+   width:8%;
  }
- #id_months{ width: 100%; padding-left: 200px; overflow: auto; }
+ #id_months{ width: 100%; padding-left: 42px; overflow: auto; }
 
  #frm_PestRisk label{
    float: left;
@@ -53,3 +69,63 @@ h1{ font-weight: 600; }
    overflow: auto;
    margin-bottom: 20px;;
  }
+ a.btn_edit {
+  color:#fb8502;
+ }
+  a.btn_edit {
+  color:#fb8502;
+ }
+.col_id, .col_id a{ color:#b7b7b7; }
+.col_view, .col_view a{ color:#229ebd; }
+.tbl_wimp3 th{
+  background-color: #229ebd;
+  color: #fff;
+  padding: 0.5rem;
+}
+.tbl_wimp3 th a{ color:#fff !important; }
+.tbl_wimp3 td{
+  padding: 0.5rem;
+}
+.errorlist{
+  color: red;
+}
+
+.errorlist {
+  position: relative;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+    color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+
+.alert-heading {
+  color: inherit;
+}
+
+.alert-link {
+  font-weight: 700;
+}
+
+
+.alert-danger hr {
+  border-top-color: #f1b0b7;
+}
+
+.alert-danger .alert-link {
+  color: #491217;
+}
+
+#btn_submit{
+  margin-left: 21%;
+}
+#main_agro_services .list-group-item{
+  padding-left:0;
+}
+#main_agro_services .list-group-item a{
+  font-weight:600;
+  color:#343a40;
+  text-decoration:none;
+}
